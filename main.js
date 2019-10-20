@@ -13,37 +13,34 @@ const companies = [
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 // Standard for loop
-
 // for (let i = 0; i < companies.length; i++) {
 //   console.log(companies[i]);
 // }
 
 //forEach
 
-// companies.forEach(function(company, index, companies) {
-//   console.log(index, company, companies.length);
-// });
+companies.forEach(function(company, index, companies) {
+  console.log(index, company, companies.length);
+});
 
 // filter
 
 // Get 21 and over
-// const canDrink = ages.filter(function (age) {
+// const canDrink = ages.filter(function(age) {
 //   if (age >= 21) {
 //     return true;
 //   }
 // });
-// console.log('canDrink ', canDrink)
 // Short form
 // const canDrink = ages.filter(age => age >= 21);
 // console.log('canDrink', canDrink);
 
 // Get all retail companies
-// const retailsCompanies = companies.filter(function (company) {
+// const retailsCompanies = companies.filter(function(company) {
 //   if (company.category === 'Retail') {
 //     return true;
 //   }
 // });
-// console.log('retailsCompanies', retailsCompanies)
 // short form
 // const retailsCompanies = companies.filter(
 //   company => company.category === 'Retail'
@@ -63,7 +60,7 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 // Map
 
-// const companyNames = companies.map(function (company) {
+// const companyNames = companies.map(function(company) {
 //   return company.name;
 // });
 // console.log('Log: -----> : companyNames', companyNames);
@@ -91,8 +88,8 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 // console.log('Log: -----> : sortedCompanies', sortedCompanies);
 
 // sort ages
-const agesAsc = ages.sort((a, b) => a - b);
-console.log('Log: -----> : agesAsc', agesAsc[0]);
+// const agesAsc = ages.sort((a, b) => a - b);
+// console.log('Log: -----> : agesAsc', agesAsc[0]);
 
 // const agesDesc = ages.sort((a, b) => b - a);
 // console.log('Log: -----> : agesDesc', agesDesc[0]);
